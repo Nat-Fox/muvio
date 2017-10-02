@@ -85,10 +85,7 @@ h1 {
     .navbar-right {
         margin-right: 5%;
     }
-    .logo {
-        width: 50%;
-        margin-left: 25% !important;    
-    }
+    
     #logo-color {
         display: none;
     }
@@ -104,6 +101,10 @@ h1 {
     }
 }
 
+.logo {
+    width: 50%;
+    margin-left: 25% !important;    
+}
 /****** solid navbar *****/
 .navbar-color {
     width: 100%;
