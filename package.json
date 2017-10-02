@@ -1,0 +1,30 @@
+{
+  "name": "puma-product-lp",
+  "version": "1.0.0",
+  "description": "Página web construída con:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nat-fox@bitbucket.org/tidchile/puma-product-lp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/tidchile/puma-product-lp#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1",
+    "pump": "^1.0.2",
+    "run-sequence": "^2.2.0"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

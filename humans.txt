@@ -1,0 +1,25 @@
+# UX
+- Alvaro Garrido
+- Maria Paz Ramirez
+
+# DEV
+- Andres Arrieche
+- Ruben Torres
+- Morin Roa
+- Hector Vergara
+- Nicolas Kittsteiner
+
+# QA
+- Rodrigo Asenjo
+- Jorge Guzman
+
+# BIZ
+- Manuel Sacasa
+
+# SCRUM
+- Debora Abalos
+- Laura Eguren
+
+# OPS
+- Gustavo Rojas
+

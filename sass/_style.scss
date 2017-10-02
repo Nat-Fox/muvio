@@ -1,0 +1,721 @@
+/* generales */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: arial, helvetica;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    opacity: 0;
+    /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 1.8s;
+    -moz-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+/********* generales para section ********/
+.section {
+    background-size: cover;    
+}
+
+/****** home navbar *****/
+.navbar {
+    background-color: transparent;
+    border: transparent;
+    height: 80px;    
+    .navbar-nav>li>a {
+        color: white;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2.33px;
+        outline: 0 none;
+        margin: 15px 10px 0px 10px;    
+    }
+    .navbar-nav>li>a:hover {
+        color: #31A7E8;
+    }
+    .navbar-right {
+        margin-right: 5%;
+    }
+    .logo {
+        width: 50%;
+        margin-left: 25% !important;    
+    }
+    #logo-color {
+        display: none;
+    }
+    .btn_login {        
+        padding: 9px 26px 9px !important;
+        letter-spacing: 1.16px !important;
+        border: 2px solid #31A7E8;
+        border-radius: 1px;
+    }
+    
+    .btn_login:hover {
+        color: #31A7E8 !important;
+    }
+}
+
+/****** solid navbar *****/
+.navbar-color {
+    width: 100%;
+    height: 78px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    box-shadow: 0 4px 7px 0 rgba(155,155,155,0.30);     
+    /*color li*/
+    .color-black {
+        color: #3a3a3a !important;    
+    }
+    .color-black:hover {
+        color: #31A7E8 !important;
+    }
+}
+
+/********** seccion 1 - home ******/
+#seccion1 {
+    position: relative;
+    overflow: hidden;
+    .imagen_opaca {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 4;
+        background-color: rgba(47, 48, 55, 0.5);
+    }
+    .btn_prueba {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 1.16px;
+        font-weight: 500;
+        background-color: #31A7E8;
+        padding: 10px 35px;
+        border-radius: 1px;
+    }
+    .btn_prueba:hover {
+        text-decoration: none;
+        background-color: #07739C;
+    }
+}
+
+#texto_intro {
+    position: absolute;
+    z-index: 5;
+    top: 35%;
+    color: #FFFCFC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 2.78px;
+}
+
+#flecha {
+    z-index: 5;
+    position: relative;
+    width: 3%;
+    left: 48.5%;
+    top: 83%;
+    cursor: pointer;    
+}
+
+#video_inicial {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;    
+    background-image: url(../imagenes/S1/imagen_ciudad.png);
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;    
+    z-index: 3;
+}
+
+/******* Seccion 2 *********/
+.superior_seccion2 {
+    height: 60%;
+    padding-top: 120px;
+}
+
+.content-title {
+    height: 70px;
+    margin-bottom: 25px;
+}
+
+.titulo {
+    font-family: "Montserrat";
+    font-size: 36px;
+    color: #173042;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    line-height: 38px;  
+    margin-bottom: 20px;  
+}
+
+.subtitulo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #3A3A3A;
+    letter-spacing: 0.57px;
+    line-height: 20px;
+}
+
+#texto_cita {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 500px;
+    color: #12CDC1;
+    letter-spacing: 0.41px;
+    text-align: right;    
+    float: right;
+    margin-top: 100px;
+}
+
+.texto_autor {
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 600;
+    color: #3A3A3A;
+    letter-spacing: 0.53px;
+    line-height: 20px;
+    text-align: right;
+    float: right;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.texto_cargo_autor {
+    font-family: "Open Sans";
+    font-size: 13px;
+    color: #000000;
+    letter-spacing: 0.46px;
+    line-height: 20px;
+    float: right;
+    margin-bottom: 45px;
+}
+
+#inferior_seccion2 {
+    background-color: #B8FAE5;
+    height: 50%;
+    margin: 0;
+}
+
+.contenedor_iconos {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    text-align: center;
+}
+
+.imagen_columna {
+    padding: 31px 0px 31px 0px;    
+    margin-top: 40px;
+}
+
+.texto_columna {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #3A3A3A;
+    letter-spacing: 0.5px;
+}
+
+/*Seccion 6 - Planes Desktop*/
+#fondo_azul {
+    position: absolute;
+    top: 81px;
+    background-color: #173042;
+    height: 60%;
+    width: 100%;
+}
+
+.seccion6 {
+    padding-top: 81px;
+}
+
+.height-table{
+    height: 520px;
+}
+
+.col_plan {
+    height: 100%;
+    padding: 20px 5px 0px 5px;    
+    text-align: center;
+}
+
+#titulo_planes {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 36px;    
+    letter-spacing: 2.5px;
+    line-height: 38px;
+    padding-top: 7px;
+    color: white;
+}
+
+.titulo_col_seccion6 {    
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1.25px;
+    text-align: center;
+    white-space: nowrap;    
+}
+
+.first-column {
+    color: #9B9B9B;        
+}
+
+.second-column {
+    color: #3A3A3A;     
+}
+
+.third-column {
+    color: #12CDC1;    
+}
+
+.quarter-column {
+    color: #15EEB7;    
+}
+
+.fifth-column{
+    color: white;    
+}
+
+.color-column-white {
+    background-color: white;
+}
+
+.color-column-blue {
+    background-color: #31A7E8;
+}
+
+.lista_planes_alcance {
+    list-style-type: none;    
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0.42px;
+    line-height: 40px;
+    padding-left: 0px;
+    text-align: right;
+}
+
+.text_lista_planes {
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #3A3A3A;
+    letter-spacing: 0.42px;
+    line-height: 40px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.text_lista_planes li {
+    height: 40px;
+}
+
+.btn_plan {
+    margin-top: 4px;
+    letter-spacing: 0.42px;
+    border: 1px solid #31A7E8;
+    border-radius: 1px;
+    font-family: "Montserrat";
+    font-size: 12px;
+}
+
+.btn_white {
+    color: #3A3A3A;
+}
+
+.btn_white:hover {
+    color: #31A7E8;
+}
+
+.btn_celeste {
+    padding: 6px 35px;
+    color: #FFFFFF;
+    background: #31A7E8;
+    border-radius: 1px 1px 1px 0 1px;
+    box-shadow: 0 2px 4px 0 rgba(132, 132, 132, 0.50);
+}
+
+.btn_celeste:hover {
+    background: #07739C;
+    color: white;
+}
+
+.btn_azul {
+    padding: 6px 35px;
+    color: #FFFFFF;
+    background: #173042;
+}
+
+.btn_azul:hover {
+    background: #31A7E8;
+    border-color: #FFFFFF;
+}
+
+/***** Seccion 7 - Footer ****/
+#seccion7 {
+    background-image: url(../imagenes/S7/centro.png);
+    background-attachment: fixed;
+}
+
+.content-logos{
+    display: flex; 
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.row-contact {    
+    background-color: #34DC8D;
+    height: 59px;    
+    margin-top: 100px;    
+}
+
+.text_row_contact {    
+    display: inline;
+    line-height: 59px;
+    font-family: "Open Sans", sans-serif ;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.57px;    
+}
+
+.btn-contact {
+    border: 1px solid #FFFFFF;
+    border-radius: 1px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    float: right;
+    margin-top: 12px;
+}
+
+.btn-contact:hover {
+    color: #31A7E8;
+    background: #FFF;
+}
+
+.mrg-section-footer {
+    padding-top: 140px;
+    height: 85%;
+}
+
+.text-footer {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    line-height: 26px;    
+}
+
+hr {
+    width: 100%; 
+    margin-right: auto; 
+    margin-left: 0px;
+}
+
+.text-address {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    line-height: 15px;    
+}
+
+
+/******* Responsive Section ******/
+#seccion-responsive{
+    margin-top: 70px;
+}
+
+.title-responsive-card {
+    padding-bottom: 20px
+}
+
+.back-responsive-fifth-column {
+    background-color: #31A7E8 !important;
+    color: white !important;    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none    
+}
+
+/* Tamaño fijo de la card */
+.thumbnail {   
+    height: 460px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center
+}
+
+.glyphicon-chevron-left:before {
+    content: "\e079";
+    color: black;
+}
+
+.glyphicon-chevron-right:before {
+    content: "\e080";
+    color: black;
+}
+
+.carousel-indicators li {
+    background-color: #9B9B9B
+}
+
+.carousel-indicators .active {    
+    background-color: black;
+}
+
+.title-plan-responsive{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 36px;    
+    letter-spacing: 2.5px;
+    line-height: 38px;
+    margin: 20px 0px 20px 0px;    
+}
+
+/***************** Media Queries **************/
+/* Mobile */
+@media only screen and (min-width: 1px) and (max-width: 480px) {      
+    /* section 1 */
+    #seccion1 {
+        height: 600px;
+    }   
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent !important;
+        padding: 0px;
+        margin-top: 15px;
+    }
+
+    .logo{
+        margin-left: 2% !important;        
+        position: absolute;
+    }
+
+    #texto_intro {
+        top: 25% !important;                
+        font-size: 25px !important;       
+    } 
+
+    /* home */
+    .titulo {    
+        margin: 80px 0px 30px 0px !important;            
+    }
+
+    #flecha {
+        width: 10% !important;
+        left: 45.5% !important;
+    } 
+
+    .visibility-video{
+        display: none;
+    }
+
+    .responsive-img-home{
+        background-image: url(../imagenes/responsive-home/responsive-home.png);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    /* section 2 */
+    #superior_seccion2 {
+        height: 60%;
+        padding-top: 40px !important
+    }
+
+    /* seccion 6 */
+    #seccion6 {
+        display: none;          
+    }
+    
+    /* footer */
+    .text_row_contact {
+        display: inline;
+        line-height: 0px !important;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0.57px;
+    }
+
+    .row-contact {        
+        background-color: #34DC8D;
+        height: 125px !important;        
+        margin-top: 150px;
+    }
+
+    .content-textbar{
+        margin-top: 20px;
+    }
+    
+    .text-footer {        
+        padding-top: 0px !important        
+    }
+}
+
+/* Tablet */   
+@media only screen and (min-width: 768px) and (max-width: 1024px) {     
+    /* section 1 */
+    #seccion1 {
+        height: 600px;
+    } 
+
+    .logo_muvio {                
+        margin-right: -200px;
+    }
+
+    .logo {
+        margin-left: 1% !important;
+        margin-right: -20px;
+        width: 40%;
+        margin-top: 5px
+    }
+
+    .navbar-default .navbar-nav>li>a {        
+        margin-top: 15px;
+        margin-left: -20px !important;
+        margin-right: 10px;
+    }
+
+    
+    .btn_login{
+        margin-right: -30px !important
+    }
+
+    .titulo {       
+        margin-top: 80px;
+    }
+
+    #flecha {
+        width: 5% !important;
+        left: 48.5% !important;
+    }
+
+    .visibility-video{
+        display: none;
+    }
+
+    .responsive-img-home{
+        background-image: url(../imagenes/responsive-home/responsive-home.png);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    /* section 2 */
+    #inferior_seccion2 {
+        background-color: #B8FAE5;
+        height: 80% !important;
+        margin: 0;
+    }
+
+    #superior_seccion2 {
+        height: 60%;
+        padding-top: 40px !important
+    }
+
+    .responsive-content{
+        margin-top: -80px !important
+    }
+
+    /* section 6 */
+    #seccion6 {
+        display: none;
+    }
+
+    /* section responsive plan */    
+    .thumbnail {   
+        height: 460px;
+        width: 100% !important;
+        margin-left: 50% !important;
+        text-align: center
+    }    
+}
+
+/* Pantallas normales */  
+@media only screen and (min-width: 1025px) and (max-width: 1281px) {     
+    #seccion-responsive{
+        display: none;
+    }    
+}
+
+ /* Pantallas grandes */
+@media only screen and (min-width: 1282px ){
+    #seccion-responsive{
+        display: none;
+    }
+}
